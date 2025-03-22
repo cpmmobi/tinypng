@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片压缩工具 - 免费、高质量的在线图片压缩服务</title>
+    <meta name="description" content="免费的在线图片压缩工具，无需付费，支持批量压缩，保持图片视觉清晰度，所有处理在本地完成，保护您的隐私">
+    <meta name="keywords" content="图片压缩,图片优化,免费压缩,批量压缩,在线工具,无水印,保持清晰度,隐私保护">
+    <meta name="author" content="Image Compression Tool">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://imagecompression.tool/">
+    <meta property="og:title" content="图片压缩工具 - 免费、高质量的在线图片压缩服务">
+    <meta property="og:description" content="免费的在线图片压缩工具，无需付费，支持批量压缩，保持图片视觉清晰度">
+    <meta property="og:image" content="assets/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://imagecompression.tool/">
+    <meta property="twitter:title" content="图片压缩工具 - 免费、高质量的在线图片压缩服务">
+    <meta property="twitter:description" content="免费的在线图片压缩工具，无需付费，支持批量压缩，保持图片视觉清晰度">
+    <meta property="twitter:image" content="assets/og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://imagecompression.tool/">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    
+    <!-- Structured data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "图片压缩工具",
+        "url": "https://imagecompression.tool/",
+        "description": "免费的在线图片压缩工具，无需付费，支持批量压缩，保持图片视觉清晰度",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "All",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "完全免费使用",
+            "批量处理图片",
+            "保持图片清晰度",
+            "本地处理保护隐私",
+            "支持多种图片格式"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28 12H12C10.3431 12 9 13.3431 9 15V25C9 26.6569 10.3431 28 12 28H28C29.6569 28 31 26.6569 31 25V15C31 13.3431 29.6569 12 28 12Z" stroke="#0071E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    
+                    <path d="M12 23L16 19L20 23" stroke="#0071E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 20L24 17L31 24" stroke="#0071E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    
+                    <circle cx="18" cy="16" r="2" fill="#0071E3"/>
+                    
+                    <path d="M7 31L10 34L13 31" stroke="#0071E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M27 31L30 34L33 31" stroke="#0071E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 34H30" stroke="#0071E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h1>图片压缩工具</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#features">功能</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <button class="hero-toggle" id="heroToggle" title="收起/展开">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 12L2 6h12l-6 6z"/>
+                    </svg>
+                </button>
+                <h1>高质量图片压缩</h1>
+                <p>压缩图片的同时保持视觉清晰度，支持批量处理最多100张图片</p>
+            </div>
+        </section>
+
+        <section class="upload-section">
+            <div class="container">
+                <div class="upload-container" id="dropArea">
+                    <div class="upload-content">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="14" width="48" height="36" rx="4" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            
+                            <path d="M32 8L32 28" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M24 16L32 8L40 16" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            
+                            <path d="M16 38L24 30L32 38" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M34 34L40 28L52 40" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            
+                            <circle cx="24" cy="24" r="3" fill="#000"/>
+                        </svg>
+                        <h3>拖放图片到这里</h3>
+                        <p>或者</p>
+                        <label for="fileInput" class="upload-btn">选择图片</label>
+                        <input type="file" id="fileInput" multiple accept="image/*" style="display: none;">
+                        <p class="upload-info">支持 JPG, PNG, WebP, SVG 等格式，最多100张</p>
+                    </div>
+                </div>
+
+                <div class="compression-controls" id="compressionControls" style="display: none;">
+                    <div class="compression-modes">
+                        <h3>选择压缩模式</h3>
+                        <p class="mode-description">根据您的需求选择合适的压缩模式</p>
+                        
+                        <div class="mode-options">
+                            <div class="mode-option" data-quality="75">
+                                <div class="mode-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="#0071E3" stroke-width="2"/>
+                                        <path d="M11 16L14 19L21 12" stroke="#0071E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="mode-content">
+                                    <h4>推荐模式</h4>
+                                    <p>平衡文件大小和图片质量，适合大多数场景</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mode-option" data-quality="90">
+                                <div class="mode-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="#000" stroke-width="2"/>
+                                        <path d="M10 16H22" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+                                        <path d="M16 10V22" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <div class="mode-content">
+                                    <h4>高质量模式</h4>
+                                    <p>保持最佳视觉效果，适合需要高清晰度的图片</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mode-option active" data-quality="50">
+                                <div class="mode-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="#0071E3" stroke-width="2"/>
+                                        <path d="M10 16H22" stroke="#0071E3" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <div class="mode-content">
+                                    <h4>超小文件模式</h4>
+                                    <p>最大程度减小文件大小，适合需要快速传输的场景</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="compressBtn" class="primary-btn">压缩图片</button>
+                </div>
+
+                <div class="preview-section" id="previewSection" style="display: none;">
+                    <div class="compression-results-container">
+                        <div class="compression-summary" id="compressionSummary" style="display: none;">
+                            <div class="summary-item">
+                                <h4>原始大小</h4>
+                                <p id="originalSize">0 MB</p>
+                            </div>
+                            <div class="summary-item">
+                                <h4>压缩后大小</h4>
+                                <p id="compressedSize">0 MB</p>
+                            </div>
+                            <div class="summary-item">
+                                <h4>节省空间</h4>
+                                <p id="savedSize">0 MB (0%)</p>
+                            </div>
+                        </div>
+                        <div class="action-buttons">
+                            <button id="downloadAllBtn" class="primary-btn" style="display: none;">下载全部</button>
+                            <button id="clearBtn" class="secondary-btn" style="display: none;">清除全部</button>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <h3><span>预览</span> (<span id="imageCount">0</span><span>张图片</span>)</h3>
+                        <div class="preview-grid" id="previewGrid"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="container">
+                <h2>为什么选择我们的工具？</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4L28.2 16.6H41.6L30.7 24.4L34.9 37L24 29.2L13.1 37L17.3 24.4L6.4 16.6H19.8L24 4Z" fill="#000"/>
+                        </svg>
+                        <h3>完全免费</h3>
+                        <p>无需付费或订阅，所有功能完全免费使用</p>
+                    </div>
+                    <div class="feature-card">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M42 6H6C4.89543 6 4 6.89543 4 8V40C4 41.1046 4.89543 42 6 42H42C43.1046 42 44 41.1046 44 40V8C44 6.89543 43.1046 6 42 6Z" stroke="#000" stroke-width="2"/>
+                            <path d="M4 14H44" stroke="#000" stroke-width="2"/>
+                            <path d="M16 6V42" stroke="#000" stroke-width="2"/>
+                        </svg>
+                        <h3>简单易用</h3>
+                        <p>三种预设模式满足不同需求，无需了解技术细节</p>
+                    </div>
+                    <div class="feature-card">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" stroke="#000" stroke-width="2"/>
+                            <path d="M24 12V24L32 32" stroke="#000" stroke-width="2"/>
+                        </svg>
+                        <h3>快速处理</h3>
+                        <p>所有处理在浏览器中完成，无需等待上传和下载</p>
+                    </div>
+                    <div class="feature-card">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M40 16H8C6.89543 16 6 16.8954 6 18V38C6 39.1046 6.89543 40 8 40H40C41.1046 40 42 39.1046 42 38V18C42 16.8954 41.1046 16 40 16Z" stroke="#000" stroke-width="2"/>
+                            <path d="M32 16V12C32 9.79086 30.2091 8 28 8H20C17.7909 8 16 9.79086 16 12V16" stroke="#000" stroke-width="2"/>
+                            <path d="M24 24V32" stroke="#000" stroke-width="2"/>
+                            <path d="M20 28H28" stroke="#000" stroke-width="2"/>
+                        </svg>
+                        <h3>批量处理</h3>
+                        <p>一次性压缩最多100张图片，节省您的时间</p>
+                    </div>
+                    <div class="feature-card">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 32C28.4183 32 32 28.4183 32 24C32 19.5817 28.4183 16 24 16C19.5817 16 16 19.5817 16 24C16 28.4183 19.5817 32 24 32Z" fill="#000"/>
+                            <path d="M42 24H38" stroke="#000" stroke-width="2"/>
+                            <path d="M10 24H6" stroke="#000" stroke-width="2"/>
+                            <path d="M24 6V10" stroke="#000" stroke-width="2"/>
+                            <path d="M24 38V42" stroke="#000" stroke-width="2"/>
+                            <path d="M36.7 11.3L33.9 14.1" stroke="#000" stroke-width="2"/>
+                            <path d="M14.1 33.9L11.3 36.7" stroke="#000" stroke-width="2"/>
+                            <path d="M36.7 36.7L33.9 33.9" stroke="#000" stroke-width="2"/>
+                            <path d="M14.1 14.1L11.3 11.3" stroke="#000" stroke-width="2"/>
+                        </svg>
+                        <h3>保持清晰度</h3>
+                        <p>智能压缩算法确保图片视觉质量不受影响</p>
+                    </div>
+                    <div class="feature-card">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4L28.2 16.6H41.6L30.7 24.4L34.9 37L24 29.2L13.1 37L17.3 24.4L6.4 16.6H19.8L24 4Z" fill="none" stroke="#000" stroke-width="2"/>
+                            <path d="M10 44H38" stroke="#000" stroke-width="2"/>
+                            <path d="M24 37V44" stroke="#000" stroke-width="2"/>
+                        </svg>
+                        <h3>隐私保护</h3>
+                        <p>所有处理在本地完成，图片不会上传到任何服务器</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2>常见问题</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>如何保证图片质量不受影响？</h3>
+                        <p>我们使用智能压缩算法，通过调整图片的编码方式而不是简单地降低分辨率来减小文件大小。您可以选择"高质量模式"，在保持最佳视觉效果的同时适度压缩图片。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>支持哪些图片格式？</h3>
+                        <p>我们支持大多数常见的图片格式，包括 JPG、PNG、WebP、SVG 等。压缩后的图片将保持原始格式。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>我的图片会上传到服务器吗？</h3>
+                        <p>不会。所有处理都在您的浏览器中完成，图片不会上传到任何服务器，确保您的隐私安全。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>有文件大小限制吗？</h3>
+                        <p>理论上没有严格限制，但我们建议单个文件不超过20MB，以确保浏览器能够顺利处理。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>为什么完全免费？</h3>
+                        <p>我们相信优质的工具应该对所有人开放。我们的目标是提供一个简单、高效、免费的图片压缩解决方案。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>如何批量下载压缩后的图片？</h3>
+                        <p>压缩完成后，点击"下载全部"按钮，所有压缩后的图片将被打包成一个ZIP文件供您下载。您也可以单独下载每张图片。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 图片压缩工具 - 一个免费的在线图片压缩服务</p>
+            <p>本工具使用浏览器的Canvas API进行图片压缩，所有处理在本地完成，不会上传您的图片</p>
+            <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">粤ICP备2022029685号-1</a></p>
+        </div>
+    </footer>
+
+    <!-- Load JavaScript files -->
+    <script src="js/compressor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
